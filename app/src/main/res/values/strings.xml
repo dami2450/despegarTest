@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DespegarTest</string>
+    <string name="todos">TODOS</string>
+    <string name="con_estacionamiento">CON ESTACIONAMIENTO</string>
+    <string name="con_desayuno">CON DESAYUNO</string>
+    <string name="buscando_hoteles">Buscando Hoteles</string>
+    <string name="cargando_hotel">Cargando Hotel</string>
+</resources>
