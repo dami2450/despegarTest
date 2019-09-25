@@ -1,4 +1,5 @@
 <resources>
     <dimen name="tamanioFoto">150dp</dimen>
     <dimen name="tamanioBoton">40dp</dimen>
+    <dimen name="tamanioEstrella">55dp</dimen>
 </resources>

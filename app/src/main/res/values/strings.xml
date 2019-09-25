@@ -5,4 +5,7 @@
     <string name="con_desayuno">CON DESAYUNO</string>
     <string name="buscando_hoteles">Buscando Hoteles</string>
     <string name="cargando_hotel">Cargando Hotel</string>
+    <string name="en_contra">"En contra:"</string>
+    <string name="a_favor">"A favor:"</string>
+    <string name="calificacion">"Calificacion:"</string>
 </resources>

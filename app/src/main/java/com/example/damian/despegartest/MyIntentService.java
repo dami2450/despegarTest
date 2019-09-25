@@ -22,8 +22,8 @@ public class MyIntentService extends IntentService {
 
     @Override
     protected void onHandleIntent(Intent intent) {
-        String url = intent.getStringExtra("url");
-        final ResultReceiver receiver = intent.getParcelableExtra("receiver");
+        String url = intent.getStringExtra(Constantes.URL);
+        final ResultReceiver receiver = intent.getParcelableExtra(Constantes.RECEIVER);
         Bundle bundle = new Bundle();
 
         try {
@@ -31,7 +31,7 @@ public class MyIntentService extends IntentService {
             HttpURLConnection conn = (HttpURLConnection) downloadURL
                     .openConnection();
             InputStream is = conn.getInputStream();
-            BufferedReader br = new BufferedReader(new InputStreamReader(is, "ISO-8859-1"));
+            BufferedReader br = new BufferedReader(new InputStreamReader(is, "UTF-8"));
             StringBuffer sb = new StringBuffer();
 
             String line = "";
@@ -46,7 +46,7 @@ public class MyIntentService extends IntentService {
             is.close();
             conn.disconnect();
 
-            bundle.putString("jsonData", data);
+            bundle.putString(Constantes.JSONDATA, data);
             receiver.send(DOWNLOAD_SUCCESS, bundle);
         } catch (Exception e) {
             receiver.send(DOWNLOAD_ERROR, Bundle.EMPTY);

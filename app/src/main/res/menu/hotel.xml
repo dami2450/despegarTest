@@ -5,8 +5,4 @@
         android:icon="@mipmap/ic_ranking"
         android:title="menuRating"
         app:showAsAction="always"/>
-    <item android:id="@+id/menuUbicar"
-        android:icon="@mipmap/ic_mapa"
-        android:title="menuUbicar"
-        app:showAsAction="always"/>
 </menu>

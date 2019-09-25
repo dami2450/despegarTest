@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 
 public class ListaHotelesActivity extends AppCompatActivity {
-    ListView listaHoteles;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +24,6 @@ public class ListaHotelesActivity extends AppCompatActivity {
                 break;
         }
         getSupportActionBar().setTitle(titulo);
-        listaHoteles = (ListView) findViewById(R.id.listaHoteles);
-        Constantes.llenarListaHoteles(this,getResources().getString(R.string.buscando_hoteles),Constantes.URL_BASE,listaHoteles,categoria);
+        Constantes.llenarListaHoteles(this,getResources().getString(R.string.buscando_hoteles),Constantes.URL_BASE,categoria);
     }
 }

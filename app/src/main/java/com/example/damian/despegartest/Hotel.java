@@ -1,5 +1,8 @@
 package com.example.damian.despegartest;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import java.util.ArrayList;
 
 public class Hotel {
@@ -7,12 +10,17 @@ public class Hotel {
     String nombre;
     String direccion;
     String descripcion;
+    String ciudad;
+    String pais;
+    String divisionAdministrativa;
     ArrayList<Beneficio> beneficios = new ArrayList<Beneficio>();
     ArrayList<Comentario> comentarios  = new ArrayList<Comentario>();
     boolean precioFinal;
     int estrellas;
     int id;
     double rating;
+    double lat;
+    double lng;
     String precio;
 
     public String getLinkImagen() {
@@ -95,11 +103,51 @@ public class Hotel {
         this.rating = rating;
     }
 
+    public double getLat() {
+        return lat;
+    }
+
+    public void setLat(double lat) {
+        this.lat = lat;
+    }
+
+    public double getLng() {
+        return lng;
+    }
+
+    public void setLng(double lng) {
+        this.lng = lng;
+    }
+
     public String getPrecio() {
         return precio;
     }
 
     public void setPrecio(String precio) {
         this.precio = precio;
+    }
+
+    public String getCiudad() {
+        return ciudad;
+    }
+
+    public void setCiudad(String ciudad) {
+        this.ciudad = ciudad;
+    }
+
+    public String getPais() {
+        return pais;
+    }
+
+    public void setPais(String pais) {
+        this.pais = pais;
+    }
+
+    public String getDivisionAdministrativa() {
+        return divisionAdministrativa;
+    }
+
+    public void setDivisionAdministrativa(String divisionAdministrativa) {
+        this.divisionAdministrativa = divisionAdministrativa;
     }
 }
